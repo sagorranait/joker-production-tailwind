@@ -5,20 +5,47 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Joker Production</title>
+  <link rel="icon" href="./images/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
+        screens: {'sm': '576px', 'md': '768px', 'lg': '992px', 'xl': '1200px', '2xl': '1400px',},
+        container: { center: true, padding: "2.25rem", },
         extend: {
-          colors: {
-            clifford: '#da373d',
-          }
+          fontFamily: { poppins: ['Poppins', 'sans-serif'], },
+          colors: { primary: '#FECC02', secondary: '#4E4E4E', color: '#131313', }
         }
       }
     }
   </script>
 </head>
-<body>
-  
+<body class="font-poppins">
+<!-- Header Start -->
+  <header id="jokerHeader bg-white">
+    <div class="container">
+      <!-- Navbar Start -->
+      <nav class="navbar flex items-center justify-between py-10">
+        <a class="logo text-3xl text-color font-black uppercase" href="./index.html">Joker Production</a>
+        <ul class="nav-item flex items-center justify-between gap-5">
+          <li class="text-sm text-color font-bold uppercase"><a href="#">about us</a></li>
+          <li class="text-sm text-color font-bold uppercase"><a href="#">our movies</a></li>
+          <li class="text-sm text-color font-bold uppercase"><a href="#">services</a></li>
+        </ul>
+      </nav>
+      <!-- Navbar End -->
+      <!-- Banner Start -->
+      <div class="banner">
+        <h5>Movie production studio</h5>
+        <h1>Films MAde to <span>Perfection</span></h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
+          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+          <a class="jokerBtn" href="#">Discover More</a>
+      </div>
+      <!-- Banner End -->
+    </div>
+  </header>
+<!-- Header End -->
 </body>
 </html>
