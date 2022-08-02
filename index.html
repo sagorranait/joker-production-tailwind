@@ -12,10 +12,13 @@
     tailwind.config = {
       theme: {
         screens: {'sm': '576px', 'md': '768px', 'lg': '992px', 'xl': '1200px', '2xl': '1400px',},
-        container: { center: true, padding: "2.25rem", },
+        container: { center: true, },
         extend: {
           fontFamily: { poppins: ['Poppins', 'sans-serif'], },
-          colors: { primary: '#FECC02', secondary: '#4E4E4E', color: '#131313', }
+          colors: { primary: '#FECC02', secondary: '#4E4E4E', color: '#131313', },
+          backgroundImage: {
+            'hero-image': "url('./images/banner.jpg')",
+          }
         }
       }
     }
@@ -36,12 +39,13 @@
       </nav>
       <!-- Navbar End -->
       <!-- Banner Start -->
-      <div class="banner">
-        <h5>Movie production studio</h5>
-        <h1>Films MAde to <span>Perfection</span></h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut  elit tellus, 
-          luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
-          <a class="jokerBtn" href="#">Discover More</a>
+      <div class="banner bg-hero-image bg-no-repeat	bg-center bg-cover aspect-auto px-20 py-40">
+        <h5 class="text-base text-white font-bold uppercase">Movie production studio</h5>
+        <h1 class="text-7xl text-white font-black uppercase">Films MAde to <span class="text-primary block">Perfection</span></h1>
+        <p class="w-6/12 text-base text-white py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <div class="jokerBtn mt-5">
+          <a class="text-base text-white font-semibold uppercase py-3 px-5 border-2 border-white hover:bg-white hover:text-color transition	duration-500" href="#">Discover More</a>
+        </div>
       </div>
       <!-- Banner End -->
     </div>
