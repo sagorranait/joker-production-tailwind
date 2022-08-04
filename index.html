@@ -18,6 +18,7 @@
           colors: { primary: '#FECC02', secondary: '#4E4E4E', color: '#131313', },
           backgroundImage: {
             'hero-image': "url('./images/banner.jpg')",
+            "footer-bg": "url('./images/footer-bg.jpg')"
           }
         }
       }
@@ -26,7 +27,7 @@
 </head>
 <body class="font-poppins">
 <!-- Header Start -->
-  <header id="jokerHeader bg-white">
+  <header id="jokerHeader">
     <div class="container">
       <!-- Navbar Start -->
       <nav class="navbar flex items-center justify-between py-10">
@@ -38,8 +39,11 @@
         </ul>
       </nav>
       <!-- Navbar End -->
-      <!-- Banner Start -->
-      <div class="banner bg-hero-image bg-no-repeat	bg-center bg-cover aspect-auto px-20 py-40">
+    </div>
+    <div class="bg-hero-image bg-no-repeat	bg-center bg-cover aspect-auto">
+      <div class="container">
+        <!-- Banner Start -->
+      <div class="banner py-40">
         <h5 class="text-base text-white font-bold uppercase">Movie production studio</h5>
         <h1 class="text-7xl text-white font-black uppercase">Films MAde to <span class="text-primary block">Perfection</span></h1>
         <p class="w-6/12 text-base text-white py-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
@@ -48,13 +52,14 @@
         </div>
       </div>
       <!-- Banner End -->
+      </div>
     </div>
   </header>
 <!-- Header End -->
 <main id="jokerMain">
   <!-- About us start -->
   <section id="jokerAbout">
-    <div class="container px-20 py-28">
+    <div class="container py-28">
       <div class="about-content p-9 border border-color">
         <!-- About start -->
         <div class="about flex items-center justify-between gap-10">
@@ -92,8 +97,8 @@
   </section>
   <!-- About us End -->
   <!-- Movie start -->
-  <section id="jokerMovie">
-    <div class="container px-20 py-9 bg-secondary">
+  <section id="jokerMovie" class="bg-secondary">
+    <div class="container py-9">
       <!-- Movie title start -->
       <div class="movie-title flex items-end justify-between">
         <div class="title-text">
@@ -124,7 +129,7 @@
   <!-- Movie end -->
   <!-- offer start -->
   <section id="jokerOffer">
-    <div class="container px-20 py-28">
+    <div class="container py-28">
       <div class="movie-title">
         <div class="title-text text-center">
             <h5 class="text-base text-color font-bold uppercase">services</h5>
@@ -177,5 +182,10 @@
   </section>
   <!-- offer end -->
 </main>
+<footer id="jokerFooter">
+  <div class="container">
+
+  </div>
+</footer>
 </body>
 </html>
