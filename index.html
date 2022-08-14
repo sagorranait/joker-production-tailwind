@@ -11,7 +11,7 @@
   <script>
     tailwind.config = {
       theme: {
-        screens: {'sm': '576px', 'md': '768px', 'lg': '992px', 'xl': '1200px', '2xl': '1400px',},
+        screens: {'sm': '576px', 'md': '768px', 'lg': '992px', 'xl': '1024px', '2xl': '1400px',},
         container: { center: true, },
         extend: {
           fontFamily: { poppins: ['Poppins', 'sans-serif'], },
@@ -58,40 +58,40 @@
   </div>
 </header>
 <!-- Header End -->
-<main id="jokerMain" class="hidden">
+<main id="jokerMain">
   <!-- About us start -->
   <section id="jokerAbout">
-    <div class="container py-28">
-      <div class="about-content p-9 border border-color">
+    <div class="container py-16 lg:py-28 px-5 lg:px-0">
+      <div class="about-content p-3 lg:p-9 border border-color">
         <!-- About start -->
-        <div class="about flex items-center justify-between gap-10">
-          <div class="about-image w-6/12 relative">
+        <div class="about flex items-center justify-between gap-10 md:gap-4 flex-col md:flex-row lg:flex-row">
+          <div class="about-image md:w-7/12 lg:w-6/12 relative">
             <img class="aspect-auto" src="./images/camera-man.jpg" alt="camera-man">
-            <h2 class="absolute -bottom-7 left-10 bg-white px-24 py-4 rounded shadow text-2xl text-color font-bold uppercase">25 years of experience</h2>
+            <h2 class="absolute bg-white w-11/12 text-center px-2 py-3 left-3 -bottom-6 lg:px-24 xl:px-16 lg:py-4 lg:-bottom-7 lg:left-7 xl:left-5 rounded shadow text-base lg:text-2xl xl:text-xl text-color font-bold uppercase">25 years of experience</h2>
         </div>
-        <div class="about-text w-6/12 h-80">
+        <div class="about-text h-fit md:w-5/12 lg:w-6/12 lg:h-80 text-center lg:text-left xl:pt-2">
             <h5 class="text-base text-color font-bold uppercase">about us</h5>
-            <h2 class="text-5xl text-color font-black uppercase">FIlming Experience <span class="block mt-3">Just Got better</span></h2>
-            <p class="text-base text-color py-5">Primis lobortis adipiscing imperdiet dis ultricies. Id commodo interdum fermentum pede dictumst ipsum. Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis ante dignissim aliquet faucibus tempus etiam feugiat.</p>
-            <div class="jokerBtn mt-3">
-              <a class="text-base text-color font-semibold uppercase py-3 px-5 border-2 border-color hover:bg-color hover:text-white transition	duration-500" href="#">Discover More</a>
+            <h2 class="text-2xl md:text-xl xl:text-3xl 2xl:text-5xl text-color font-black uppercase">FIlming Experience <span class="md:inline 2xl:block 2xl:mt-3 xl:mt-1">Just Got better</span></h2>
+            <p class="text-sm lg:text-base text-color py-5 md:py-2 2xl:py-5">Primis lobortis adipiscing imperdiet dis ultricies. Id commodo interdum fermentum pede dictumst ipsum. <span class="md:hidden xl:inline">Erat sapien phasellus suspendisse natoque nulla leo ornare mi. Pretium rhoncus venenatis ante dignissim aliquet faucibus tempus etiam feugiat.</span></p>
+            <div class="jokerBtn mt-3 lg:mt-5">
+              <a class="block lg:inline text-base text-color font-semibold uppercase py-3 px-5 border-2 border-color hover:bg-color hover:text-white transition	duration-500" href="#">Discover More</a>
             </div>
         </div>
         </div>
         <!-- About end -->
         <!-- Gole Start -->
-        <div class="gole mt-20 flex items-start justify-between gap-14">
-          <div class="gole-text w-4/12 border-t-4 border-color pt-3">
-            <h2 class="text-2xl text-color font-bold uppercase">our vision</h2>
-            <p class="text-base text-color pt-2">Lorem ipsum amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+        <div class="gole mt-20 flex items-start justify-between gap-8 lg:gap-14 flex-col md:flex-row lg:flex-row">
+          <div class="gole-text md:w-4/12 lg:w-4/12 text-center lg:text-left border-t-4 border-color pt-3">
+            <h2 class="text-xl lg:text-2xl text-color font-bold uppercase">our vision</h2>
+            <p class="text-sm lg:text-base text-color pt-2">Lorem ipsum amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
           </div>
-          <div class="gole-text w-4/12 border-t-4 border-color pt-3">
-            <h2 class="text-2xl text-color font-bold uppercase">our mission</h2>
-            <p class="text-base text-color pt-2">Malesuada tempus et habitant nascetur porta nec. Fusce consequat risus per sollicitudin hendrerit suscipit convallis sociosqu.</p>
+          <div class="gole-text md:w-4/12 lg:w-4/12 text-center lg:text-left border-t-4 border-color pt-3">
+            <h2 class="text-xl lg:text-2xl text-color font-bold uppercase">our mission</h2>
+            <p class="text-sm lg:text-base text-color pt-2">Malesuada tempus et habitant nascetur porta nec. Fusce consequat risus per sollicitudin hendrerit suscipit convallis sociosqu.</p>
           </div>
-          <div class="gole-text w-4/12 border-t-4 border-color pt-3">
-            <h2 class="text-2xl text-color font-bold uppercase">our motto</h2>
-            <p class="text-base text-color pt-2">“We don’t make movies to make money, we make money to make more movies.”</p>
+          <div class="gole-text md:w-4/12 lg:w-4/12 text-center lg:text-left border-t-4 border-color pt-3">
+            <h2 class="text-xl lg:text-2xl text-color font-bold uppercase">our motto</h2>
+            <p class="text-sm lg:text-base text-color pt-2">“We don’t make movies to make money, we make money to make more movies.”</p>
           </div>
         </div>
         <!-- Gole end -->
@@ -99,7 +99,7 @@
   </section>
   <!-- About us End -->
   <!-- Movie start -->
-  <section id="jokerMovie" class="bg-secondary">
+  <section id="jokerMovie" class="bg-secondary hidden">
     <div class="container py-40">
       <!-- Movie title start -->
       <div class="movie-title flex items-end justify-between">
@@ -130,7 +130,7 @@
   </section>
   <!-- Movie end -->
   <!-- offer start -->
-  <section id="jokerOffer">
+  <section id="jokerOffer" class="hidden">
     <div class="container py-28">
       <div class="movie-title">
         <div class="title-text text-center">
